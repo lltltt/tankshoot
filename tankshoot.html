@@ -6,14 +6,22 @@
             background-color: #4b5320;
         }
         canvas {
-            background-color: whitesmoke;
-            margin: auto;
-            display: block;
+			position: absolute;
+            top: 0px;
+            left: 0px;
+            background: transparent;
+        }
+        #background {
+			z-index: -1;
+		}
+        #tank {
+            z-index: 0;
         }
     </style>
 
     <body onload="init()">
-        <canvas id="canvas" height="800" width="1400"></canvas>
+        <canvas id="background" height="800" width="1400"></canvas>
+        <canvas id="tank" height="800" width="1400"></canvas>
     </body>
     <script src="tankshoot.js"></script>
 </html>
