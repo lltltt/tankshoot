@@ -66,7 +66,7 @@ function Tank() {
 	this.move = function(event, ctx) {
 		if (KEY_STATUS.left || KEY_STATUS.right || KEY_STATUS.down || KEY_STATUS.up) {
 			
-			this.context.clearRect(this.x, this.y, this.width, this.height);
+			this.context.clearRect(this.x, this.y, this.canvasWidth, this.canvasHeight);
 			
 			if (KEY_STATUS.up) {
 				this.y -= this.speed
